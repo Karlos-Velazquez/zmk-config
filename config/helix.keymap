@@ -47,7 +47,7 @@ As such, those are in use within the default layer at this time.*/
 
             bindings = <
 &trans  &trans        &trans        &trans        &trans         &trans                                          &trans              &trans     &trans           &trans   &trans  &trans
-&trans  &kp RC(HOME)  &kp RC(LEFT)  &kp UP_ARROW  &kp RC(RIGHT)  &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 5      &mo 7            &kp ESC  &none   &trans
+&trans  &kp RC(HOME)  &kp RC(LEFT)  &kp UP_ARROW  &kp RC(RIGHT)  &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 4      &mo 5            &kp ESC  &none   &trans
 &to 0   &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END                                         &kp RCTRL           &kp LC(C)  &kp RIGHT_SHIFT  &kp F2   &none   &to 0
 &trans  &kp RC(TAB)   &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &kp RC(END)       &kp C_VOL_DN    &kp C_VOL_UP  &kp K_CONTEXT_MENU  &kp LC(X)  &kp LC(V)        &kp F2   &none   &trans
 &trans  &trans        &trans        &trans        &trans         &trans            &trans          &trans        &trans              &trans     &trans           &trans   &trans  &trans
@@ -56,11 +56,11 @@ As such, those are in use within the default layer at this time.*/
 
         Navegacion {
             bindings = <
-&trans  &trans        &trans        &trans        &trans         &trans                                          &trans              &trans     &trans           &trans   &trans  &trans
-&trans  &kp RC(HOME)  &kp RC(LEFT)  &kp UP_ARROW  &kp RC(RIGHT)  &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 5      &mo 7            &kp ESC  &none   &trans
-&to 0   &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END                                         &kp RCTRL           &kp LC(C)  &kp RIGHT_SHIFT  &kp F2   &none   &to 0
-&trans  &kp RC(TAB)   &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &kp RC(END)       &kp C_VOL_DN    &kp C_VOL_UP  &kp K_CONTEXT_MENU  &kp LC(X)  &kp LC(V)        &kp F2   &none   &trans
-&trans  &trans        &trans        &trans        &trans         &trans            &trans          &trans        &trans              &trans     &trans           &trans   &trans  &trans
+&trans  &trans        &trans            &trans         &trans             &trans                                          &trans              &trans     &trans           &trans   &trans  &trans
+&trans  &kp RC(HOME)  &kp PAGE_UP       &kp RS(TAB)    &kp PAGE_DOWN      &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 4      &mo 5            &kp ESC  &none   &trans
+&to 0   &kp HOME      &kp RS(RC(LEFT))  &kp TAB        &kp RC(TAB)        &kp END                                         &kp RCTRL           &kp LC(C)  &kp RIGHT_SHIFT  &kp F2   &none   &to 0
+&trans  &kp RC(TAB)   &kp RC(PAGE_UP)   &kp PAGE_DOWN  &kp RC(PAGE_DOWN)  &kp RC(END)       &kp C_VOL_DN    &kp C_VOL_UP  &kp K_CONTEXT_MENU  &kp LC(X)  &kp LC(V)        &kp F2   &none   &trans
+&trans  &trans        &trans            &trans         &trans             &trans            &trans          &trans        &trans              &trans     &trans           &trans   &trans  &trans
             >;
         };
 
@@ -143,11 +143,11 @@ As such, those are in use within the default layer at this time.*/
 
         Ventanas {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F12  &kp F6  &kp F4  &kp F2  &kp F10  &kp F8                    &kp F9  &kp F1  &kp F3  &kp F5  &kp F7  &kp F11
+&trans   &trans  &trans  &trans  &trans   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
