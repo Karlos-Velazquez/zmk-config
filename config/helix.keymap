@@ -20,7 +20,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks008 {
+        Heliks009 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -73,11 +73,11 @@ As such, those are in use within the default layer at this time.*/
             // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
 
             bindings = <
-&kp ESC  &kp N7  &kp N5  &kp N3  &kp N1  &kp N8                    &kp N9  &kp N0  &kp N2  &kp N4  &kp N6  &kp DEL
-&trans   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp N7    &kp N5    &kp N3          &kp N1     &kp N8                                &kp N9     &kp N0            &kp N2     &kp N4      &kp N6  &kp DEL
+&trans   &trans    &trans    &kp UP_ARROW    &trans     &trans                                &trans     &mo 4             &mo 5      &kp LA(F4)  &trans  &trans
+&trans   &kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp END                               &trans     &kp LA(LEFT_ALT)  &kp LC(V)  &kp TAB     &trans  &trans
+&trans   &trans    &trans    &kp RC(DOWN)    &trans     &trans     &trans          &trans     &trans     &kp LC(X)         &kp LC(V)  &trans      &trans  &trans
+&trans   &trans    &trans    &trans          &trans     &kp SPACE  &kp LEFT_ALT    &kp ENTER  &kp SPACE  &trans            &trans     &trans      &trans  &trans
             >;
         };
 
@@ -113,11 +113,11 @@ As such, those are in use within the default layer at this time.*/
 
         Momentaneo {
             bindings = <
-&kp ESC      &kp N7        &kp N5          &kp N3              &kp N1          &kp N8                              &kp N9  &kp N0           &kp N2     &kp N4  &kp N6  &kp DEL
-&kp LA(TAB)  &kp RC(HOME)  &kp RC(LEFT)    &kp UP_ARROW        &kp RC(RIGHT)   &kp RC(UP_ARROW)                    &trans  &trans           &kp CAPS   &trans  &trans  &kp LA(TAB)
-&trans       &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &kp END                             &trans  &trans           &kp LG(V)  &trans  &trans  &trans
-&trans       &kp RC(TAB)   &kp RS(TAB)     &kp RC(DOWN_ARROW)  &kp TAB         &kp RC(END)       &trans    &trans  &trans  &trans           &trans     &trans  &trans  &trans
-&trans       &trans        &trans          &trans              &kp LEFT_SHIFT  &trans            &trans    &trans  &trans  &kp RIGHT_SHIFT  &trans     &trans  &trans  &trans
+&kp ESC      &kp N7        &kp N5          &kp N3              &kp N1          &kp N8                              &kp N9  &kp N0           &kp N2             &kp N4  &kp N6  &kp DEL
+&kp LA(TAB)  &kp RC(HOME)  &kp RC(LEFT)    &kp UP_ARROW        &kp RC(RIGHT)   &kp RC(UP_ARROW)                    &trans  &trans           &kp CAPS           &trans  &trans  &kp LA(TAB)
+&trans       &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &kp END                             &trans  &trans           &kp LG(V)          &trans  &trans  &trans
+&trans       &kp RC(TAB)   &kp RS(TAB)     &kp RC(DOWN_ARROW)  &kp TAB         &kp RC(END)       &trans    &trans  &trans  &trans           &trans             &trans  &trans  &trans
+&trans       &trans        &trans          &kp RC(PAGE_UP)     &kp LEFT_SHIFT  &trans            &trans    &trans  &trans  &kp RIGHT_SHIFT  &kp LC(PAGE_DOWN)  &trans  &trans  &trans
             >;
         };
 
@@ -144,10 +144,10 @@ As such, those are in use within the default layer at this time.*/
         Ventanas {
             bindings = <
 &trans        &kp LG(N7)  &kp LG(N6)          &kp LG(N5)          &kp LG(N4)     &trans                    &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N8)  &trans
-&trans        &trans      &trans              &kp LG(UP_ARROW)    &trans         &trans                    &trans  &trans      &trans      &trans      &trans      &trans
+&trans        &trans      &trans              &kp LG(UP_ARROW)    &trans         &trans                    &trans  &trans      &kp LG(L)   &trans      &trans      &trans
 &trans        &trans      &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &trans                    &trans  &trans      &trans      &trans      &trans      &trans
 &trans        &trans      &trans              &trans              &trans         &trans  &trans    &trans  &trans  &trans      &trans      &trans      &trans      &trans
-&kp LEFT_GUI  &trans      &trans              &trans              &trans         &trans  &trans    &trans  &trans  &trans      &trans      &trans      &trans      &kp LEFT_GUI
+&kp LEFT_GUI  &to 3       &trans              &trans              &trans         &trans  &trans    &trans  &trans  &trans      &trans      &trans      &to 3       &kp LEFT_GUI
             >;
         };
     };
