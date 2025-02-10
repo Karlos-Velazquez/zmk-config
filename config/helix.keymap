@@ -20,7 +20,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks009 {
+        Heliks010 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -73,11 +73,11 @@ As such, those are in use within the default layer at this time.*/
             // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
 
             bindings = <
-&kp ESC  &kp N7    &kp N5    &kp N3          &kp N1     &kp N8                                &kp N9     &kp N0            &kp N2     &kp N4      &kp N6  &kp DEL
-&trans   &trans    &trans    &kp UP_ARROW    &trans     &trans                                &trans     &mo 4             &mo 5      &kp LA(F4)  &trans  &trans
-&trans   &kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp END                               &trans     &kp LA(LEFT_ALT)  &kp LC(V)  &kp TAB     &trans  &trans
-&trans   &trans    &trans    &kp RC(DOWN)    &trans     &trans     &trans          &trans     &trans     &kp LC(X)         &kp LC(V)  &trans      &trans  &trans
-&trans   &trans    &trans    &trans          &trans     &kp SPACE  &kp LEFT_ALT    &kp ENTER  &kp SPACE  &trans            &trans     &trans      &trans  &trans
+&kp ESC  &kp N7    &kp N5    &kp N3        &kp N1     &kp N8                                 &kp N9     &kp N0     &kp N2     &kp N4      &kp N6  &kp DEL
+&trans   &trans    &trans    &kp UP_ARROW  &trans     &trans                                 &trans     &mo 4      &mo 5      &kp LA(F4)  &trans  &trans
+&to 0    &kp HOME  &kp LEFT  &kp SPACE     &kp RIGHT  &kp END                                &trans     &kp LC(X)  &kp LC(V)  &kp LA(F4)  &trans  &to 0
+&trans   &trans    &trans    &kp DOWN      &trans     &trans     &trans           &trans     &trans     &kp LC(X)  &kp LC(V)  &trans      &trans  &trans
+&trans   &trans    &trans    &trans        &trans     &kp SPACE  &kp BACKSPACE    &kp ENTER  &kp ENTER  &trans     &trans     &trans      &trans  &trans
             >;
         };
 
