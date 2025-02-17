@@ -57,12 +57,29 @@ As such, those are in use within the default layer at this time.*/
 
             label = "LALT_TAB";
         };
+
+        sim_shift: sim_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&tog 6>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&tog 6>;
+
+            label = "SIM_SHIFT";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks017 {
+        Heliks018 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -74,7 +91,7 @@ As such, those are in use within the default layer at this time.*/
 &kp ESC         &kp N6  &kp N4      &kp N2     &kp N0  &kp N8                                       &kp N9     &kp N1  &kp N3     &kp N5  &kp N7         &kp DEL
 &to 1           &kp X   &kp B       &kp P      &kp H   &kp Y                                        &kp J      &sl 4   &kp R      &kp C   &kp M          &to 1
 &kp LEFT_SHIFT  &kp I   &kp A       &kp E      &kp O   &kp U                                        &kp D      &kp T   &kp S      &kp N   &kp L          &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &kp W   &kp PERIOD  &kp COMMA  &kp F   &kp K      &kp C_VOL_DN     &kp C_VOLUME_UP  &kp Z      &kp Q   &kp V      &kp G   &kp SEMICOLON  &kp RIGHT_SHIFT
+&sim_shift      &kp W   &kp PERIOD  &kp COMMA  &kp F   &kp K      &kp C_VOL_DN     &kp C_VOLUME_UP  &kp Z      &kp Q   &kp V      &kp G   &kp SEMICOLON  &sim_shift
 &mo 10          &mo 9   &mo 8       &mom_base  &mo 6   &kp SPACE  &kp BACKSPACE    &kp ENTER        &kp SPACE  &mo 6   &mom_base  &mo 8   &mo 9          &mo 10
             >;
         };
