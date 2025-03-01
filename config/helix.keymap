@@ -118,7 +118,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks024 {
+        Heliks025 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -201,17 +201,17 @@ As such, those are in use within the default layer at this time.*/
 
         Simbolos {
             bindings = <
-&trans          &trans     &kp RS(F3)      &trans          &kp RC(N)      &trans                           &trans             &kp LA(F4)         &kp F5            &kp F2     &trans             &trans
-&trans          &kp RA(X)  &kp RA(B)       &kp RA(P)       &kp RA(H)      &kp RA(Y)                        &kp RA(Z)          &kp RA(S)          &kp RA(R)         &kp RA(C)  &kp RA(M)          &trans
-&kp LEFT_SHIFT  &kp RA(A)  &kp SLASH       &kp RA(SLASH)   &kp RA(O)      &kp RA(U)                        &kp RA(D)          &kp RA(T)          &kp LS(NUMBER_2)  &kp RA(N)  &kp RA(L)          &kp RIGHT_SHIFT
-&trans          &kp RA(Q)  &kp RA(PERIOD)  &kp RA(COMMA)   &kp RA(F)      &kp RA(K)      &trans    &trans  &kp RA(J)          &kp RA(W)          &kp RA(V)         &kp RA(G)  &kp RA(SEMICOLON)  &trans
-&trans          &trans     &trans          &kp LEFT_SHIFT  &kp RA(COMMA)  &kp RA(COMMA)  &trans    &trans  &kp RA(BACKSLASH)  &kp RA(BACKSLASH)  &kp RIGHT_SHIFT   &trans     &trans             &trans
+&trans          &kp LG(N7)  &kp LG(NUMBER_6)  &kp LG(N5)      &kp LG(NUMBER_4)  &kp LG(N0)                       &kp LG(N9)         &kp LG(NUMBER_1)   &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(N8)         &trans
+&trans          &kp RA(X)   &kp RA(B)         &kp RA(P)       &kp RA(H)         &kp RA(Y)                        &kp RA(Z)          &kp RA(S)          &kp RA(R)         &kp RA(C)         &kp RA(M)          &trans
+&kp LEFT_SHIFT  &kp RA(A)   &kp SLASH         &kp RA(SLASH)   &kp RA(O)         &kp RA(U)                        &kp RA(D)          &kp RA(T)          &kp LS(NUMBER_2)  &kp RA(N)         &kp RA(L)          &kp RIGHT_SHIFT
+&trans          &kp RA(Q)   &kp RA(PERIOD)    &kp RA(COMMA)   &kp RA(F)         &kp RA(K)      &trans    &trans  &kp RA(J)          &kp RA(W)          &kp RA(V)         &kp RA(G)         &kp RA(SEMICOLON)  &trans
+&trans          &trans      &trans            &kp LEFT_SHIFT  &kp RA(COMMA)     &kp RA(COMMA)  &trans    &trans  &kp RA(BACKSLASH)  &kp RA(BACKSLASH)  &kp RIGHT_SHIFT   &trans            &trans             &trans
             >;
         };
 
         Momentaneo {
             bindings = <
-&kp ESC      &kp N7        &kp N5          &kp N3              &kp N1          &kp N8                              &kp N9  &kp N0           &kp N2             &kp N4   &kp N6  &kp DEL
+&kp ESC      &none         &kp RS(F3)      &none               &kp RC(N)       &none                               &none   &kp LA(F4)       &kp F5             &kp F2   &none   &kp DEL
 &kp LA(TAB)  &kp RC(HOME)  &kp RC(LEFT)    &kp UP_ARROW        &kp RC(RIGHT)   &kp RC(UP_ARROW)                    &trans  &trans           &kp CAPS           &trans   &trans  &kp LA(TAB)
 &trans       &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &kp END                             &trans  &trans           &kp LG(V)          &trans   &trans  &trans
 &trans       &kp RC(TAB)   &kp RS(TAB)     &kp RC(DOWN_ARROW)  &kp TAB         &kp RC(END)       &trans    &trans  &trans  &trans           &trans             &trans   &trans  &trans
