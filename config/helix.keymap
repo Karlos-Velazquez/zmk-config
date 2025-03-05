@@ -118,7 +118,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks026 {
+        Heliks027 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -181,21 +181,21 @@ As such, those are in use within the default layer at this time.*/
 
         Acentos {
             bindings = <
-&trans  &trans            &kp SLASH         &kp DOT           &kp SLASH         &trans                        &trans  &trans  &kp GRAVE  &kp RA(COMMA)  &trans  &trans
-&trans  &trans            &trans            &kp SEMICOLON     &kp W             &trans                        &trans  &trans  &to 2      &to 1          &to 3   &trans
-&trans  &kp RA(NUMBER_1)  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)                    &trans  &trans  &trans     &trans         &trans  &trans
-&trans  &trans            &trans            &trans            &kp RA(U)         &trans      &trans    &trans  &trans  &trans  &trans     &trans         &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans  &trans  &trans     &trans         &trans  &trans
+&trans          &trans            &kp SLASH         &kp DOT           &kp SLASH         &trans                        &trans  &trans  &kp GRAVE  &kp RA(COMMA)  &trans  &trans
+&trans          &trans            &kp SEMICOLON     &kp SEMICOLON     &kp SEMICOLON     &trans                        &trans  &trans  &to 2      &to 1          &to 3   &trans
+&kp LEFT_SHIFT  &kp RA(NUMBER_1)  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)                    &trans  &trans  &trans     &trans         &trans  &kp RIGHT_SHIFT
+&trans          &trans            &trans            &trans            &kp RA(NUMBER_6)  &trans      &trans    &trans  &trans  &trans  &trans     &trans         &trans  &trans
+&trans          &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans  &trans  &trans     &trans         &trans  &trans
             >;
         };
 
         Tabulacion {
             bindings = <
-&kp ESC  &kp N7  &kp N5              &kp N3              &kp N1               &kp N8                    &kp N9  &kp N0  &kp N2  &kp N4       &kp N6  &kp DEL
-&trans   &trans  &trans              &kp LA(UP_ARROW)    &trans               &trans                    &trans  &trans  &trans  &kp LA(TAB)  &trans  &trans
-&trans   &trans  &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT_ARROW)  &trans                    &trans  &trans  &trans  &trans       &trans  &trans
-&trans   &trans  &trans              &trans              &trans               &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans  &trans
-&trans   &trans  &trans              &trans              &trans               &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans  &trans
+&kp ESC  &kp N7  &kp N5              &kp N3              &kp N1               &kp N8                    &kp N9  &kp N0       &kp N2  &kp N4        &kp N6  &kp DEL
+&trans   &trans  &trans              &kp LA(UP_ARROW)    &trans               &trans                    &trans  &kp LA(TAB)  &trans  &kp LEFT_ALT  &trans  &trans
+&trans   &trans  &kp LA(LEFT_ARROW)  &kp TAB             &kp LA(RIGHT_ARROW)  &trans                    &trans  &trans       &trans  &trans        &trans  &trans
+&trans   &trans  &trans              &kp LA(DOWN_ARROW)  &trans               &trans  &trans    &trans  &trans  &trans       &trans  &trans        &trans  &trans
+&trans   &trans  &trans              &trans              &trans               &trans  &trans    &trans  &trans  &trans       &trans  &trans        &trans  &trans
             >;
         };
 
