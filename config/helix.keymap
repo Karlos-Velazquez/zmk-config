@@ -118,7 +118,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks027 {
+        Heliks028 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -202,9 +202,9 @@ As such, those are in use within the default layer at this time.*/
         Simbolos {
             bindings = <
 &trans          &none      &kp RS(F3)      &none           &kp RC(N)      &none                            &none              &kp LA(F4)         &kp F5            &kp F2     &none              &trans
-&trans          &kp RA(X)  &kp RA(B)       &kp RA(P)       &kp RA(H)      &kp RA(Y)                        &kp RA(Z)          &kp RA(S)          &kp RA(R)         &kp RA(C)  &kp RA(M)          &trans
-&kp LEFT_SHIFT  &kp RA(A)  &kp SLASH       &kp RA(SLASH)   &kp RA(O)      &kp RA(U)                        &kp RA(D)          &kp RA(T)          &kp LS(NUMBER_2)  &kp RA(N)  &kp RA(L)          &kp RIGHT_SHIFT
-&trans          &kp RA(Q)  &kp RA(PERIOD)  &kp RA(COMMA)   &kp RA(F)      &kp RA(K)      &trans    &trans  &kp RA(J)          &kp RA(W)          &kp RA(V)         &kp RA(G)  &kp RA(SEMICOLON)  &trans
+&trans          &kp RA(X)  &kp RA(B)       &kp RA(P)       &kp RA(H)      &kp RA(Y)                        &kp RA(J)          &kp RA(S)          &kp RA(R)         &kp RA(C)  &kp RA(M)          &trans
+&kp LEFT_SHIFT  &kp RA(I)  &kp SLASH       &kp RA(SLASH)   &kp RA(O)      &kp RA(U)                        &kp RA(D)          &kp RA(T)          &kp LS(NUMBER_2)  &kp RA(N)  &kp RA(L)          &kp RIGHT_SHIFT
+&trans          &kp RA(Q)  &kp RA(PERIOD)  &kp RA(COMMA)   &kp RA(F)      &kp RA(K)      &trans    &trans  &kp RA(Z)          &kp RA(W)          &kp RA(V)         &kp RA(G)  &kp RA(SEMICOLON)  &trans
 &trans          &trans     &trans          &kp LEFT_SHIFT  &kp RA(COMMA)  &kp RA(COMMA)  &trans    &trans  &kp RA(BACKSLASH)  &kp RA(BACKSLASH)  &kp RIGHT_SHIFT   &trans     &trans             &trans
             >;
         };
@@ -231,11 +231,11 @@ As such, those are in use within the default layer at this time.*/
 
         Alt_Funcion {
             bindings = <
-&kp F11  &kp F7     &kp F5        &kp F3     &kp F1     &kp F9                       &kp F8     &kp F10    &kp F2     &kp F4        &kp F6     &kp F12
-&trans   &kp LA(X)  &kp LA(B)     &kp LA(P)  &kp LA(H)  &kp LA(Y)                    &kp LA(J)  &kp LA(J)  &kp LA(R)  &kp LA(C)     &kp LA(M)  &trans
-&trans   &kp LA(I)  &kp LA(A)     &kp LA(E)  &kp LA(O)  &kp LA(U)                    &kp LA(D)  &kp LA(T)  &kp LA(S)  &kp LA(N)     &kp LA(L)  &trans
-&trans   &kp LA(W)  &kp LA(W)     &kp LA(Q)  &kp LA(F)  &kp LA(K)  &trans    &trans  &kp LA(Z)  &kp LA(Q)  &kp LA(V)  &kp LA(G)     &trans     &trans
-&trans   &trans     &kp LEFT_ALT  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &kp LEFT_ALT  &trans     &trans
+&kp F11  &kp F7     &kp F5        &kp F3     &kp F1     &kp F9                       &kp F8     &kp F10    &kp F2     &kp F4        &kp F6             &kp F12
+&trans   &kp LA(X)  &kp LA(B)     &kp LA(P)  &kp LA(H)  &kp LA(Y)                    &kp LA(J)  &kp LA(J)  &kp LA(R)  &kp LA(C)     &kp LA(M)          &trans
+&trans   &kp LA(I)  &kp LA(A)     &kp LA(E)  &kp LA(O)  &kp LA(U)                    &kp LA(D)  &kp LA(T)  &kp LA(S)  &kp LA(N)     &kp LA(L)          &trans
+&trans   &kp LA(W)  &kp LA(W)     &kp LA(Q)  &kp LA(F)  &kp LA(K)  &trans    &trans  &kp LA(Z)  &kp LA(Q)  &kp LA(V)  &kp LA(G)     &kp LA(SEMICOLON)  &trans
+&trans   &trans     &kp LEFT_ALT  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &kp LEFT_ALT  &trans             &trans
             >;
         };
 
