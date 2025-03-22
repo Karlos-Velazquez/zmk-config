@@ -231,11 +231,11 @@ As such, those are in use within the default layer at this time.*/
 
         Alt_Funcion {
             bindings = <
-&kp F11  &kp F7     &kp F5        &kp F3     &kp F1     &kp F9                       &kp F8     &kp F10    &kp F2     &kp F4        &kp F6             &kp F12
-&trans   &kp LA(X)  &kp LA(B)     &kp LA(P)  &kp LA(H)  &kp LA(Y)                    &kp LA(J)  &kp LA(J)  &kp LA(R)  &kp LA(C)     &kp LA(M)          &trans
-&trans   &kp LA(I)  &kp LA(A)     &kp LA(E)  &kp LA(O)  &kp LA(U)                    &kp LA(D)  &kp LA(T)  &kp LA(S)  &kp LA(N)     &kp LA(L)          &trans
-&trans   &kp LA(W)  &kp LA(W)     &kp LA(Q)  &kp LA(F)  &kp LA(K)  &trans    &trans  &kp LA(Z)  &kp LA(Q)  &kp LA(V)  &kp LA(G)     &kp LA(SEMICOLON)  &trans
-&trans   &trans     &kp LEFT_ALT  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &kp LEFT_ALT  &trans             &trans
+&kp F11  &kp F7     &kp F5        &kp F3     &kp F1     &kp F9                       &kp F8     &kp F10    &kp F2     &kp F4        &kp F6     &kp F12
+&trans   &kp LA(X)  &kp LA(B)     &kp LA(P)  &kp LA(H)  &kp LA(Y)                    &kp LA(J)  &kp LA(J)  &kp LA(R)  &kp LA(C)     &kp LA(M)  &trans
+&trans   &kp LA(I)  &kp LA(A)     &kp LA(E)  &kp LA(O)  &kp LA(U)                    &kp LA(D)  &kp LA(T)  &kp LA(S)  &kp LA(N)     &kp LA(L)  &trans
+&trans   &kp LA(W)  &kp LA(W)     &kp LA(Q)  &kp LA(F)  &kp LA(K)  &trans    &trans  &kp LA(Z)  &kp LA(Q)  &kp LA(V)  &kp LA(G)     &none      &trans
+&trans   &trans     &kp LEFT_ALT  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &kp LEFT_ALT  &trans     &trans
             >;
         };
 
