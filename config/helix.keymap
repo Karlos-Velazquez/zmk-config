@@ -118,7 +118,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks028 {
+        Heliks029 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -211,11 +211,11 @@ As such, those are in use within the default layer at this time.*/
 
         Momentaneo {
             bindings = <
-&kp ESC      &kp LG(N7)    &kp LG(N6)      &kp LG(N5)          &kp LG(N4)      &kp LG(N0)                          &kp LG(N9)  &kp LG(N1)       &kp LG(N2)         &kp LG(N3)  &kp LG(N8)  &kp DEL
-&kp LA(TAB)  &kp RC(HOME)  &kp RC(LEFT)    &kp UP_ARROW        &kp RC(RIGHT)   &kp RC(UP_ARROW)                    &trans      &trans           &kp CAPS           &trans      &trans      &kp LA(TAB)
-&trans       &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &kp END                             &trans      &trans           &kp LG(V)          &trans      &trans      &trans
-&trans       &kp RC(TAB)   &kp RS(TAB)     &kp RC(DOWN_ARROW)  &kp TAB         &kp RC(END)       &trans    &trans  &trans      &trans           &trans             &trans      &trans      &trans
-&trans       &trans        &kp LEFT_ALT    &kp RC(PAGE_UP)     &kp LEFT_SHIFT  &trans            &trans    &trans  &trans      &kp RIGHT_SHIFT  &kp LC(PAGE_DOWN)  &kp TAB     &trans      &trans
+&kp ESC      &kp LG(N7)    &kp LG(N6)      &kp LG(N5)          &kp LG(N4)      &kp LG(N0)                          &kp LG(N9)     &kp LG(N1)       &kp LG(N2)         &kp LG(N3)  &kp LG(N8)  &kp DEL
+&kp LA(TAB)  &kp RC(HOME)  &kp RC(LEFT)    &kp UP_ARROW        &kp RC(RIGHT)   &kp RC(UP_ARROW)                    &trans         &trans           &kp CAPS           &trans      &trans      &kp LA(TAB)
+&trans       &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &kp END                             &trans         &trans           &kp LG(V)          &trans      &trans      &trans
+&trans       &kp RC(TAB)   &kp RS(TAB)     &kp RC(DOWN_ARROW)  &kp TAB         &kp RC(END)       &trans    &trans  &trans         &trans           &trans             &trans      &trans      &trans
+&trans       &trans        &kp LEFT_ALT    &kp RC(PAGE_UP)     &kp LEFT_SHIFT  &kp LG(SPACE)     &trans    &trans  &kp LG(SPACE)  &kp RIGHT_SHIFT  &kp LC(PAGE_DOWN)  &kp TAB     &trans      &trans
             >;
         };
 
@@ -241,11 +241,11 @@ As such, those are in use within the default layer at this time.*/
 
         Ventanas {
             bindings = <
-&trans        &kp LG(N7)  &kp LG(N6)          &kp LG(N5)          &kp LG(N4)     &kp LG(N0)                    &kp LG(N9)  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N8)  &trans
-&trans        &trans      &trans              &kp LG(UP_ARROW)    &trans         &trans                        &trans      &trans      &kp LG(L)   &trans      &trans      &trans
-&trans        &trans      &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &trans                        &trans      &trans      &trans      &trans      &trans      &trans
-&trans        &trans      &trans              &trans              &trans         &trans      &trans    &trans  &trans      &trans      &trans      &trans      &trans      &trans
-&kp LEFT_GUI  &to 3       &trans              &trans              &trans         &trans      &trans    &trans  &trans      &trans      &trans      &trans      &to 3       &kp LEFT_GUI
+&trans        &kp LG(N7)  &kp LG(N6)          &kp LG(N5)          &kp LG(N4)     &kp LG(N0)                       &kp LG(N9)     &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N8)  &trans
+&trans        &trans      &trans              &kp LG(UP_ARROW)    &trans         &trans                           &trans         &trans      &kp LG(L)   &trans      &trans      &trans
+&trans        &trans      &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &trans                           &trans         &trans      &trans      &trans      &trans      &trans
+&trans        &trans      &trans              &trans              &trans         &trans         &trans    &trans  &trans         &trans      &trans      &trans      &trans      &trans
+&kp LEFT_GUI  &to 3       &trans              &trans              &trans         &kp LG(SPACE)  &trans    &trans  &kp LG(SPACE)  &trans      &trans      &trans      &to 3       &kp LEFT_GUI
             >;
         };
     };
