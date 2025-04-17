@@ -118,7 +118,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks030 {
+        Heliks031 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -131,7 +131,7 @@ As such, those are in use within the default layer at this time.*/
 &fun_base       &kp X         &kp B       &kp P      &kp H   &kp Y                                        &kp J      &sl 4   &kp R      &kp C   &kp M          &fun_base
 &kp LEFT_SHIFT  &kp I         &kp A       &kp E      &kp O   &kp U                                        &kp D      &kp T   &kp S      &kp N   &kp L          &kp RIGHT_SHIFT
 &sim_Lshift     &kp W         &kp PERIOD  &kp COMMA  &kp F   &kp K      &kp C_VOL_DN     &kp C_VOLUME_UP  &kp Z      &kp Q   &kp V      &kp G   &kp SEMICOLON  &sim_Rshift
-&mo 9           &kp LEFT_ALT  &mo 8       &mom_base  &mo 6   &kp SPACE  &kp BACKSPACE    &kp ENTER        &kp SPACE  &mo 6   &mom_base  &mo 8   &kp TAB        &mo 9
+&mo 10          &kp LEFT_ALT  &mo 8       &mom_base  &mo 6   &kp SPACE  &kp BACKSPACE    &kp ENTER        &kp SPACE  &mo 6   &mom_base  &mo 8   &kp TAB        &mo 10
             >;
         };
 
