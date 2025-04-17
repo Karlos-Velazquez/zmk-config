@@ -118,7 +118,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks032 {
+        Heliks033 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -214,7 +214,7 @@ As such, those are in use within the default layer at this time.*/
 &kp ESC      &kp LG(N7)    &kp LG(N6)      &kp LG(N5)          &kp LG(N4)      &kp LG(N0)                          &kp LG(N9)     &kp LG(N1)        &kp LG(N2)         &kp LG(N3)        &kp LG(N8)  &kp DEL
 &kp LA(TAB)  &kp RC(HOME)  &kp RC(LEFT)    &kp UP_ARROW        &kp RC(RIGHT)   &kp RC(UP_ARROW)                    &trans         &kp LG(NUMBER_4)  &kp LG(N5)         &kp LG(NUMBER_6)  &trans      &kp LA(TAB)
 &trans       &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT       &kp END                             &kp LG(N0)     &kp LG(NUMBER_1)  &kp LG(NUMBER_2)   &kp LG(NUMBER_3)  &none       &trans
-&trans       &kp RC(TAB)   &kp RS(TAB)     &kp RC(DOWN_ARROW)  &kp TAB         &kp RC(END)       &trans    &trans  &trans         &kp LG(N7)        &kp LG(N8)         &kp LG(N3)        &trans      &trans
+&trans       &kp RC(TAB)   &kp RS(TAB)     &kp RC(DOWN_ARROW)  &kp TAB         &kp RC(END)       &trans    &trans  &trans         &kp LG(N7)        &kp LG(N8)         &kp LG(N9)        &trans      &trans
 &trans       &trans        &kp LEFT_ALT    &kp RC(PAGE_UP)     &kp LEFT_SHIFT  &kp LG(SPACE)     &trans    &trans  &kp LG(SPACE)  &kp RIGHT_SHIFT   &kp LC(PAGE_DOWN)  &kp TAB           &trans      &trans
             >;
         };
