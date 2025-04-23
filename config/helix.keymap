@@ -113,12 +113,19 @@ As such, those are in use within the default layer at this time.*/
 
             label = "FUN_BASE";
         };
+
+        doble_tab: doble_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp TAB>;
+            label = "DOBLE_TAB";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks035 {
+        Heliks036 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -171,11 +178,11 @@ As such, those are in use within the default layer at this time.*/
             // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
 
             bindings = <
-&kp ESC  &kp N7        &kp N5        &kp N3        &kp N1         &kp N8                             &kp N9     &kp N0     &kp N2            &kp N4      &kp N6   &kp DEL
-&trans   &trans        &kp RC(LEFT)  &kp LS(TAB)   &kp RC(RIGHT)  &trans                             &trans     &mo 4      &mo 5             &kp LA(F4)  &trans   &trans
-&trans   &kp HOME      &kp ENTER     &kp TAB       &kp RC(V)      &kp END                            &trans     &kp ENTER  &kp LG(NUMBER_2)  &kp LC(V)   &trans   &trans
-&trans   &kp LEFT_ALT  &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &trans     &trans       &trans     &trans     &kp LC(X)  &kp LC(V)         &trans      &kp TAB  &trans
-&trans   &trans        &trans        &trans        &trans         &kp ENTER  &kp ENTER    &kp ENTER  &kp ENTER  &trans     &trans            &trans      &trans   &trans
+&kp ESC  &kp N7        &kp N5        &kp N3        &kp N1         &kp N8                             &kp N9     &kp N0     &kp N2      &kp N4            &kp N6   &kp DEL
+&trans   &trans        &kp RC(LEFT)  &kp LS(TAB)   &kp RC(RIGHT)  &trans                             &trans     &kp ENTER  &doble_tab  &kp ENTER         &trans   &trans
+&trans   &kp HOME      &kp ENTER     &doble_tab    &kp ENTER      &kp END                            &trans     &kp LC(V)  &kp ENTER   &kp LG(NUMBER_2)  &trans   &trans
+&trans   &kp LEFT_ALT  &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &trans     &trans       &trans     &trans     &kp LC(X)  &kp LC(V)   &trans            &kp TAB  &trans
+&trans   &trans        &trans        &trans        &trans         &kp ENTER  &kp ENTER    &kp ENTER  &kp ENTER  &trans     &trans      &trans            &trans   &trans
             >;
         };
 
@@ -245,7 +252,7 @@ As such, those are in use within the default layer at this time.*/
 &trans        &trans      &trans              &kp LG(UP_ARROW)    &trans         &trans                           &trans         &trans      &kp LG(L)   &trans      &trans      &trans
 &trans        &trans      &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &trans                           &trans         &trans      &kp LG(V)   &trans      &trans      &trans
 &trans        &trans      &trans              &trans              &trans         &trans         &trans    &trans  &trans         &trans      &trans      &trans      &trans      &trans
-&kp LEFT_GUI  &to 3       &trans              &trans              &trans         &kp LG(SPACE)  &trans    &trans  &kp LG(SPACE)  &trans      &trans      &trans      &to 3       &kp LEFT_GUI
+&kp LEFT_GUI  &to 0       &trans              &trans              &trans         &kp LG(SPACE)  &trans    &trans  &kp LG(SPACE)  &trans      &trans      &trans      &to 3       &kp LEFT_GUI
             >;
         };
     };
