@@ -118,7 +118,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks034 {
+        Heliks035 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -171,11 +171,11 @@ As such, those are in use within the default layer at this time.*/
             // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
 
             bindings = <
-&kp ESC  &kp N7        &kp N5        &kp N3        &kp N1         &kp N8                                 &kp N9     &kp N0     &kp N2           &kp N4      &kp N6   &kp DEL
-&trans   &trans        &kp RC(LEFT)  &kp UP_ARROW  &kp RC(RIGHT)  &trans                                 &trans     &mo 4      &mo 5            &kp LA(F4)  &trans   &trans
-&trans   &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END                                &trans     &kp LC(X)  &kp RIGHT_SHIFT  &kp LA(F4)  &trans   &trans
-&trans   &kp LEFT_ALT  &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &trans     &trans           &trans     &trans     &kp LC(X)  &kp LC(V)        &trans      &kp TAB  &trans
-&trans   &trans        &trans        &trans        &trans         &kp SPACE  &kp BACKSPACE    &kp ENTER  &kp ENTER  &trans     &trans           &trans      &trans   &trans
+&kp ESC  &kp N7        &kp N5        &kp N3        &kp N1         &kp N8                             &kp N9     &kp N0     &kp N2            &kp N4      &kp N6   &kp DEL
+&trans   &trans        &kp RC(LEFT)  &kp LS(TAB)   &kp RC(RIGHT)  &trans                             &trans     &mo 4      &mo 5             &kp LA(F4)  &trans   &trans
+&trans   &kp HOME      &kp ENTER     &kp TAB       &kp RC(V)      &kp END                            &trans     &kp ENTER  &kp LG(NUMBER_2)  &kp LC(V)   &trans   &trans
+&trans   &kp LEFT_ALT  &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &trans     &trans       &trans     &trans     &kp LC(X)  &kp LC(V)         &trans      &kp TAB  &trans
+&trans   &trans        &trans        &trans        &trans         &kp ENTER  &kp ENTER    &kp ENTER  &kp ENTER  &trans     &trans            &trans      &trans   &trans
             >;
         };
 
