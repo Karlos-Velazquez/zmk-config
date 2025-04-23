@@ -114,18 +114,32 @@ As such, those are in use within the default layer at this time.*/
             label = "FUN_BASE";
         };
 
-        doble_tab: doble_tab {
+        doble_tab_enter: doble_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp TAB &kp TAB>;
+            bindings = <&kp TAB &kp TAB &kp ENTER>;
             label = "DOBLE_TAB";
+        };
+
+        ctrl_v_enter: ctrl_v_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V) &kp ENTER>;
+            label = "CTRL_V_ENTER";
+        };
+
+        vent_2_enter: vent_2_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(NUMBER_2) &kp ENTER>;
+            label = "VENT_2_ENTER";
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks036 {
+        Heliks037 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -178,11 +192,11 @@ As such, those are in use within the default layer at this time.*/
             // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
 
             bindings = <
-&kp ESC  &kp N7        &kp N5        &kp N3        &kp N1         &kp N8                             &kp N9     &kp N0     &kp N2      &kp N4            &kp N6   &kp DEL
-&trans   &trans        &kp RC(LEFT)  &kp LS(TAB)   &kp RC(RIGHT)  &trans                             &trans     &kp ENTER  &doble_tab  &kp ENTER         &trans   &trans
-&trans   &kp HOME      &kp ENTER     &doble_tab    &kp ENTER      &kp END                            &trans     &kp LC(V)  &kp ENTER   &kp LG(NUMBER_2)  &trans   &trans
-&trans   &kp LEFT_ALT  &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &trans     &trans       &trans     &trans     &kp LC(X)  &kp LC(V)   &trans            &kp TAB  &trans
-&trans   &trans        &trans        &trans        &trans         &kp ENTER  &kp ENTER    &kp ENTER  &kp ENTER  &trans     &trans      &trans            &trans   &trans
+&kp ESC  &kp N7        &kp N5         &kp N3         &kp N1            &kp N8                             &kp N9     &kp N0            &kp N2            &kp N4         &kp N6   &kp DEL
+&trans   &trans        &kp RC(LEFT)   &kp LS(TAB)    &kp RC(RIGHT)     &trans                             &trans     &kp ENTER         &doble_tab_enter  &kp ENTER      &trans   &trans
+&trans   &kp HOME      &vent_2_enter  &ctrl_v_enter  &doble_tab_enter  &kp END                            &trans     &doble_tab_enter  &ctrl_v_enter     &vent_2_enter  &trans   &trans
+&trans   &kp LEFT_ALT  &kp RS(TAB)    &kp RC(DOWN)   &kp TAB           &trans     &trans       &trans     &trans     &kp LC(X)         &kp LC(V)         &trans         &kp TAB  &trans
+&trans   &trans        &trans         &trans         &trans            &kp ENTER  &kp ENTER    &kp ENTER  &kp ENTER  &trans            &trans            &trans         &trans   &trans
             >;
         };
 
