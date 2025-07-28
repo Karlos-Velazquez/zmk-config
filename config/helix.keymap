@@ -139,7 +139,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks040 {
+        Heliks041 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -222,11 +222,11 @@ As such, those are in use within the default layer at this time.*/
 
         Simbolos {
             bindings = <
-&trans          &none      &kp RS(F3)      &none              &kp RC(N)      &none                            &none          &kp LA(F4)     &kp F5            &kp F2     &none              &trans
-&trans          &kp RA(X)  &kp RA(B)       &kp PERIOD         &kp RA(H)      &kp RA(Y)                        &kp RA(J)      &kp RA(S)      &kp RA(R)         &kp RA(C)  &kp RA(M)          &trans
-&kp LEFT_SHIFT  &kp RA(I)  &kp SLASH       &kp RA(SLASH)      &kp RA(O)      &kp RA(P)                        &kp RA(Z)      &kp RA(T)      &kp LS(NUMBER_2)  &kp RA(N)  &kp RA(SEMICOLON)  &kp RIGHT_SHIFT
-&trans          &kp RA(Q)  &kp RA(PERIOD)  &kp RA(BACKSLASH)  &kp RA(F)      &kp RA(U)      &trans    &trans  &kp RA(D)      &kp RA(W)      &kp RA(V)         &kp RA(G)  &kp RA(RS(K))      &trans
-&trans          &trans     &trans          &kp LEFT_SHIFT     &kp RA(COMMA)  &kp RA(COMMA)  &trans    &trans  &kp RA(COMMA)  &kp RA(COMMA)  &kp RIGHT_SHIFT   &trans     &trans             &trans
+&trans          &none      &kp RS(F3)      &none           &kp RC(N)      &none                            &none          &kp LA(F4)     &kp F5             &kp F2     &none              &trans
+&trans          &kp RA(X)  &kp RA(B)       &kp PERIOD      &kp RA(H)      &kp RA(Y)                        &kp RA(J)      &kp RA(S)      &kp RA(R)          &kp RA(C)  &kp RA(M)          &trans
+&kp LEFT_SHIFT  &kp RA(I)  &kp SLASH       &kp RA(SLASH)   &kp RA(O)      &kp RA(P)                        &kp RA(Z)      &kp RA(T)      &kp LS(NUMBER_2)   &kp RA(N)  &kp RA(SEMICOLON)  &kp RIGHT_SHIFT
+&trans          &kp RA(Q)  &kp RA(PERIOD)  &kp RA(COMMA)   &kp RA(F)      &kp RA(U)      &trans    &trans  &kp RA(D)      &kp RA(W)      &kp RA(BACKSLASH)  &kp RA(G)  &kp RA(RS(K))      &trans
+&trans          &trans     &trans          &kp LEFT_SHIFT  &kp RA(COMMA)  &kp RA(COMMA)  &trans    &trans  &kp RA(COMMA)  &kp RA(COMMA)  &kp RIGHT_SHIFT    &trans     &trans             &trans
             >;
         };
 
